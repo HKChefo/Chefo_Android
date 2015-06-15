@@ -1,44 +1,29 @@
 package com.example.user.chefo;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+
+import com.parse.Parse;
 
 
-public class MainActivity extends ActionBarActivity {
-    Button chef;
-    Button customer;
+public class Cheflogin extends ActionBarActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        chef = (Button)findViewById(R.id.Chefbutton);
-        customer = (Button)findViewById(R.id.Customerbutton);
-        chef.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Cheflogin.class);
-                startActivity(intent);
+        setContentView(R.layout.activity_cheflogin);
+        Parse.enableLocalDatastore(this);
 
-            }
-        });
-        customer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        Parse.initialize(this, "X8wVdeNlkg7EWwC4engBxJpaUsxYzthFpjUxgdAg", "GjRj2BuH3fV1heNiNqjSoTqzS5Yke8fwIZuyvWak");
 
-            }
-        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_cheflogin, menu);
         return true;
     }
 
