@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Welcome extends ActionBarActivity {
     Button chef;
     Button customer;
     @Override
