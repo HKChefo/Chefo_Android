@@ -30,8 +30,8 @@ public class Welcome extends ActionBarActivity {
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),CustomerLogin.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(getApplicationContext(),CustomerLogin.class);
+                startActivity(intent2);
             }
         });
     }
