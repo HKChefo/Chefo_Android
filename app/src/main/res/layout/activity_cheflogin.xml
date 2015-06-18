@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:src="@drawable/chefo"
-        android:id="@+id/imageView" />
+        android:id="@+id/ChefoLogo3" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,8 +28,8 @@
         android:text="Type Here"
         android:textStyle="italic"
         android:gravity="center_horizontal"
-        android:layout_alignTop="@+id/chefusernameL"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_above="@+id/chefpwl"
+        android:layout_alignParentEnd="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,8 +48,8 @@
         android:text="Type Here"
         android:textStyle="italic"
         android:gravity="center_horizontal"
-        android:layout_alignTop="@+id/chefpwl"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_above="@+id/chefloginb"
+        android:layout_alignParentEnd="true" />
     <Button
         android:layout_width="150dp"
         android:layout_height="40dp"

@@ -22,18 +22,15 @@
         <activity
             android:name=".Cheflogin"
             android:label="@string/title_activity_cheflogin"
-            android:parentActivityName=".Welcome" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Welcome" />
+            >
+
+
         </activity>
         <activity
             android:name=".CustomerLogin"
-            android:label="@string/title_activity_customer_login" >
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Welcome" />
+            android:label="@string/title_activity_customer_login"
+            >
+
         </activity>
     </application>
 

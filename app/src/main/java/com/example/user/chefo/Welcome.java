@@ -13,6 +13,7 @@ import android.widget.Button;
 public class Welcome extends ActionBarActivity {
     Button chef;
     Button customer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,16 +23,17 @@ public class Welcome extends ActionBarActivity {
         chef.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Cheflogin.class);
+                Intent intent = new Intent(Welcome.this,Cheflogin.class);
                 startActivity(intent);
-
+                finish();
             }
         });
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(),CustomerLogin.class);
+                Intent intent2 = new Intent(Welcome.this,CustomerLogin.class);
                 startActivity(intent2);
+                finish();
             }
         });
     }

@@ -10,73 +10,44 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:src="@drawable/chefo"
-        android:id="@+id/imageView" />
+        android:id="@+id/ChefoLogo2"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chefusernameL"
         android:text="Username :"
         android:textSize="25dp"
-        android:layout_marginTop="180dp"/>
+        android:layout_marginTop="180dp"
+        android:id="@+id/customernamel"/>
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/chefusername"
-        android:textSize="25dp"
         android:background="#FFFFFF"
         android:text="Type Here"
-        android:textStyle="italic"
-        android:gravity="center_horizontal"
-        android:layout_alignTop="@+id/chefusernameL"
-        android:layout_alignEnd="@+id/imageView" />
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/customernamel"
+        android:layout_alignEnd="@+id/ChefoLogo2"
+        android:id="@+id/customername"
+        android:gravity="center_horizontal" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
         android:text="Password :"
-        android:id="@+id/chefpwl"
-        android:layout_below="@+id/chefusernameL"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentStart="true" />
+        android:textSize="25dp"
+        android:layout_below="@+id/customernamel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/customerpwl"/>
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/chefpw"
-        android:textSize="25dp"
         android:background="#FFFFFF"
         android:text="Type Here"
-        android:textStyle="italic"
+        android:textSize="25dp"
         android:gravity="center_horizontal"
-        android:layout_alignTop="@+id/chefpwl"
-        android:layout_alignEnd="@+id/imageView" />
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:background="@drawable/buttonshape"
-        android:text="Log In"
-        android:textSize="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/chefpwl"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/chefloginb"/>
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:background="@drawable/buttonshape"
-        android:text="Sign Up"
-        android:textSize="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/chefloginb"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/chefsignupb"/>
+        android:layout_alignTop="@+id/customerpwl"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/customerpw"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/chefsignupb"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/lunchbox"/>
 </RelativeLayout>
 
 
