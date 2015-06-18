@@ -5,4 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_cheflogin">Cheflogin</string>
     <string name="title_activity_customer_login">CustomerLogin</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_chef_profile">chef_profile</string>
 </resources>
