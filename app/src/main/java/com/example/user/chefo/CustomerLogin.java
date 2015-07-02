@@ -14,9 +14,9 @@ public class CustomerLogin extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
-        Parse.enableLocalDatastore(this);
+        /*Parse.enableLocalDatastore(this);
 
-        Parse.initialize(this, "X8wVdeNlkg7EWwC4engBxJpaUsxYzthFpjUxgdAg", "GjRj2BuH3fV1heNiNqjSoTqzS5Yke8fwIZuyvWak");
+        Parse.initialize(this, "X8wVdeNlkg7EWwC4engBxJpaUsxYzthFpjUxgdAg", "GjRj2BuH3fV1heNiNqjSoTqzS5Yke8fwIZuyvWak");*/
     }
 
     @Override

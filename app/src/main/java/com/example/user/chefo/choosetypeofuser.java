@@ -1,36 +1,23 @@
 package com.example.user.chefo;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 
-public class Welcome extends ActionBarActivity{
-    Button getstartbt;
+public class choosetypeofuser extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
-        getstartbt = (Button)findViewById(R.id.getstart_button);
-        getstartbt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Welcome.this, choosetypeofuser.class);
-                startActivity(intent);
-            }
-        });
-
+        setContentView(R.layout.activity_choosetypeofuser);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_choosetypeofuser, menu);
         return true;
     }
 
